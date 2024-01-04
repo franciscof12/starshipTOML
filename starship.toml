@@ -1,0 +1,145 @@
+add_newline = false
+
+right_format = """
+$aws\
+$golang\
+$java\
+$gradle\
+$kotlin\
+$kubernetes\
+$memory_usage\
+$nodejs\
+"""
+
+[username]
+disabled = false
+show_always = true
+style_user = "bold yellow"
+style_root= "bold red"
+format = "[╭─kaizen]($style)@"
+
+[hostname]
+disabled = false
+ssh_only = false
+style = "fg:#FFA577 bold"
+format =  "[ecra]($style) ⚡️"
+trim_at = "-"
+
+[directory]
+disabled = false
+truncate_to_repo = true
+truncation_length = 0
+home_symbol = "~"
+format = "[$path](fg:#FFA500 bold)[/](fg:#FFD700 bold) "
+
+[character]
+error_symbol = "[╰ 󰊠](fg:#FFA500 bold)"
+success_symbol = "[╰  ](fg:#FFD700 bold)" 
+
+[kubernetes]
+symbol = '󱃾'
+style = 'fg:#FFD700 bold'
+format = '[$symbol ($cluster in )$context \($namespace\)]($style) '
+disabled = false
+
+[kotlin]
+kotlin_binary = 'kotlin'
+symbol = ' '
+style = 'fg:#FFD700 bold'
+format = '[$symbol($version )]($style)'
+
+[gradle]
+style = 'fg:#FFA500 bold'
+format = '[$symbol($version )]($style)'
+symbol = ' '
+
+[aws]
+symbol = ""
+
+[docker_context]
+disabled = true
+symbol = " "
+format = '[$symbol$context]($style) '
+
+[git_branch]
+symbol = " "
+style = 'bold #FFD700'
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
+[git_status]
+conflicted = '✘ ${count}(fg:#FFA500)'
+ahead = '⇡${count}(fg:#FFA500)'
+diverged = '🌪 ⇕⇡${ahead_count}⇣${behind_count}(fg:#FFA500)'
+behind = '🐢 ⇣${count}(fg:#FFA500)'
+up_to_date = '🚀 (fg:#FFD700)'
+untracked = '🌟 (fg:#FFD700)'
+modified = '󰷬 (fg:#FFA500)'
+staged = '[📦 ++${count}](fg:#FFA500)'
+style = 'bold dimmed #FFA500'
+
+[golang]
+symbol = " "
+style = 'fg:#FFD700 bold'
+format = '[${symbol}(${version} )]($style)'
+
+[java]
+symbol = " "
+style = 'fg:#FFA500 bold'
+format = '[${symbol}(${version} )]($style)'
+
+#[memory_usage]
+#disabled = false
+#threshold = -1
+#symbol = ' '
+#style = 'bold dimmed purple'
+#format = '$symbol [${ram} | ${ram_pct}]($style) '
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+disabled = true
+
+[php]
+symbol = " "
+
+[rust]
+symbol = " "
