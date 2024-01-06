@@ -1,7 +1,5 @@
 # Custom Starship Configuration
-
 <img width="1512" alt="Captura de pantalla 2024-01-04 a las 20 28 55" src="https://github.com/franciscof12/starshipTOML/assets/123760628/a931e77b-293e-479c-bd53-d1546436cb43">
-
 ## Description
 This repository contains a custom configuration for [Starship](https://starship.rs/), the minimal, blazing-fast, and extremely customizable prompt for any shell. This configuration enhances your command line experience by displaying relevant information efficiently and stylishly.
 
@@ -28,7 +26,5 @@ This configuration includes custom settings for:
 
 ## Contributing
 Contributions are welcome! If you have suggestions or modifications, please open an issue or submit a pull request.
-
-
 
 [Feel free to modify this template to suit the specifics of your configuration and repository.]
