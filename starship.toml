@@ -7,22 +7,21 @@ $java\
 $gradle\
 $kotlin\
 $kubernetes\
-$memory_usage\
 $nodejs\
 """
 
 [username]
 disabled = false
 show_always = true
-style_user = "bold yellow"
-style_root= "bold red"
+style_user = "bold #9370DB"  # MediumPurple
+style_root = "bold #FF69B4"  # HotPink
 format = "[╭─kaizen]($style)@"
 
 [hostname]
 disabled = false
 ssh_only = false
-style = "fg:#FFA577 bold"
-format =  "[ecra]($style) ⚡️"
+style = "bold #FF69B4"  # HotPink
+format = "[ecra]($style) "
 trim_at = "-"
 
 [directory]
@@ -30,31 +29,28 @@ disabled = false
 truncate_to_repo = true
 truncation_length = 0
 home_symbol = "~"
-format = "[$path](fg:#FFA500 bold)[/](fg:#FFD700 bold) "
+format = "[$path](fg:#9370DB bold)[/](fg:#FF69B4 bold) "  # MediumPurple y HotPink
 
 [character]
-error_symbol = "[╰ 󰊠](fg:#FFA500 bold)"
-success_symbol = "[╰  ](fg:#FFD700 bold)" 
+error_symbol = "[╰ 󰊠](fg:#9370DB dimmed bold)"  # MediumPurple
+success_symbol = "[╰ 󰥬](fg:#9370DB bold)"  # MediumPurple
 
 [kubernetes]
 symbol = '󱃾'
-style = 'fg:#FFD700 bold'
+style = 'fg:#FF69B4 bold'  # HotPink
 format = '[$symbol ($cluster in )$context \($namespace\)]($style) '
 disabled = false
 
 [kotlin]
 kotlin_binary = 'kotlin'
 symbol = ' '
-style = 'fg:#FFD700 bold'
+style = 'fg:#FF69B4 bold'  # HotPink
 format = '[$symbol($version )]($style)'
 
 [gradle]
-style = 'fg:#FFA500 bold'
+style = 'fg:#9370DB bold'  # MediumPurple
 format = '[$symbol($version )]($style)'
 symbol = ' '
-
-[aws]
-symbol = ""
 
 [docker_context]
 disabled = true
@@ -63,36 +59,33 @@ format = '[$symbol$context]($style) '
 
 [git_branch]
 symbol = " "
-style = 'bold #FFD700'
+style = 'fg:#FF69B4 bold'  # HotPink
 format = '[$symbol$branch(:$remote_branch)]($style) '
 
 [git_status]
-conflicted = '✘ ${count}(fg:#FFA500)'
-ahead = '⇡${count}(fg:#FFA500)'
-diverged = '🌪 ⇕⇡${ahead_count}⇣${behind_count}(fg:#FFA500)'
-behind = '🐢 ⇣${count}(fg:#FFA500)'
-up_to_date = '🚀 (fg:#FFD700)'
-untracked = '🌟 (fg:#FFD700)'
-modified = '󰷬 (fg:#FFA500)'
-staged = '[📦 ++${count}](fg:#FFA500)'
-style = 'bold dimmed #FFA500'
+conflicted = ' 🏳 '
+ahead = ' 🏎💨 '
+behind = ' 😰 '
+diverged = ' 😵 '
+up_to_date = ' ✓ '
+untracked = ' 🤷 ' 
+stashed = ' 📦 '
+modified = ' 📝 '
+staged = ' [++\($count\)](green) '
+renamed = ' 👅 '
+deleted = ' 🗑 '
+
 
 [golang]
-symbol = " "
-style = 'fg:#FFD700 bold'
+symbol = " "
+style = 'fg:#FF69B4 dimmed bold'  # HotPink
 format = '[${symbol}(${version} )]($style)'
 
 [java]
 symbol = " "
-style = 'fg:#FFA500 bold'
+style = 'fg:#9370DB bold'  # MediumPurple
 format = '[${symbol}(${version} )]($style)'
 
-#[memory_usage]
-#disabled = false
-#threshold = -1
-#symbol = ' '
-#style = 'bold dimmed purple'
-#format = '$symbol [${ram} | ${ram_pct}]($style) '
 
 [os.symbols]
 Alpaquita = " "
